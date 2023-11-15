@@ -1,7 +1,7 @@
 <script lang="ts">
   export let data;
 
-  let { recipientName, reason, delay, userName, hopper, nya } = data;
+  let { recipientName, reason, delay, userName, hopper, nya, url } = data;
 
   const messages = {
     makingIt: `
@@ -83,7 +83,13 @@
       {/if}
     {/if}
   </div>
+  <div>
+    <h2>What to do now? Send the person this link of the page! :)</h2>
+    <a href={`/${url}`}>{`https://bus-apology-site.vercel.app/${url}`}</a>
+  </div>
+
 </section>
+
 
 <style>
   p {
@@ -91,10 +97,21 @@
     font-size: 2rem;
   }
 
+  h2 {
+    line-height: 1.5;
+    font-size: 2rem;
+  }
+
+  a {
+    line-height: 1.5;
+    font-size: 1.6rem;
+  }
+
   section {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
     height: calc(100vh - 70px);
   }
 </style>

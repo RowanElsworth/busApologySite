@@ -1,5 +1,5 @@
 <header>
-  <p>busLateSiteIApologiseSite</p>
+  <a href="/">busLateSiteIApologiseSite</a>
 </header>
 
 <style>
@@ -10,6 +10,11 @@
     align-items: center;
     justify-content: center;
     font-size: 2rem;
+  }
+
+  a {
+    text-decoration: none;
+    color: black;
   }
 </style>
 

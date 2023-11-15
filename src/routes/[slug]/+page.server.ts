@@ -22,6 +22,7 @@ export async function load({ params }) {
     userName: data?.userName,
     recipientName: data?.recipientName,
     hopper: data?.hopper,
-    nya: data?.nya
+    nya: data?.nya,
+    url: url
   }
 }
