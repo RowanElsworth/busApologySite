@@ -58,25 +58,25 @@
 <section class="centered">
   <div>
     {#if delay != "false" && hopper == false}
-      {#if nya == false}
+      {#if nya == null}
         <p>{@html messages.makingIt}</p>
       {:else}
         <p>{@html messages.makingItNya}</p>
       {/if}
     {:else if delay == "false" && hopper == false}
-      {#if nya == false}
+      {#if nya == null}
         <p>{@html messages.notMakingIt}</p>
       {:else}
         <p>{@html messages.notMakingItNya}</p>
       {/if}
     {:else if delay != "false" && hopper == true}
-      {#if nya == false}
+      {#if nya == null}
         <p>{@html messages.makingItHopper}</p>
       {:else}
         <p>{@html messages.makingItHopperNya}</p>
       {/if}
     {:else if delay == "false" && hopper == true}
-      {#if nya == false}
+      {#if nya == null}
         <p>{@html messages.notMakingItHopper}</p>
       {:else}
         <p>{@html messages.notMakingItHopperNya}</p>
