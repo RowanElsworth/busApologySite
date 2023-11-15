@@ -98,6 +98,7 @@
   }
 
   h2 {
+    margin-top: 5rem;
     line-height: 1.5;
     font-size: 2rem;
   }
