@@ -1,5 +1,3 @@
-<!-- Txylyt3otQhWwXa0 -->
-
 <script lang=ts>
   import { enhance } from "$app/forms";
 
@@ -60,8 +58,9 @@
       <label for="">Hopper Bus?
         <select name="hopper" id="hopper" required>
           <option selected disabled>Select an option</option>
-          <option value="true">Yes :(</option>
-          <option value="false">No</option>
+          {#each hopper as x}
+            <option value={x.value}>{x.label}</option>
+          {/each}
         </select>
       </label>
 
@@ -148,5 +147,5 @@
     form {
       width: 95%;
     }
-}
+  }
 </style>
