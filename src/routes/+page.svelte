@@ -93,13 +93,14 @@
     justify-content: center;
   }
 
+  
   section {
     margin-top: 20px;
     display: flex;
     align-items: center;
     justify-content: center;
   }
-
+  
   form {
     outline: 1px solid #333;
     width: 50%;
@@ -109,11 +110,13 @@
     background-color: #f8f8f8;
     border-radius: 1rem;
   }
-
+  
   label {
+    font-size: 1.2rem;
+    font-weight: 1.2rem;
     margin-bottom: 10px;
   }
-
+  
   select, button {
     margin-top: 5px;
     padding: 8px;
@@ -122,6 +125,11 @@
     font-size: 16px;
   }
 
+  input[type=text] {
+    padding: 0.2rem;
+    font-size: 1.2rem;
+  }
+  
   button {
     cursor: pointer;
     background-color: #4CAF50;
@@ -131,4 +139,14 @@
     padding: 10px;
     font-size: 16px;
   }
+  
+  @media only screen and (max-width: 500px) {
+    main {
+      display: block;
+    }
+
+    form {
+      width: 95%;
+    }
+}
 </style>

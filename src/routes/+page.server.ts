@@ -18,6 +18,9 @@ export const actions = {
 async function createNewUrl(r, d, h, uN, rN, ny) {
   let url;
 
+
+  // Add a column that sets the type of the message in the database
+  // rather than generating it client side.
   const { data, error } = await supabase
     .from('pages')
     .insert([

@@ -115,4 +115,19 @@
     flex-direction: column;
     height: calc(100vh - 70px);
   }
+
+  @media only screen and (max-width: 500px) {
+    p {
+      padding: 0 0.5rem;
+      font-size: 1.8rem;
+    }
+
+    h2 {
+      text-align: center;
+      font-size: 1.6rem;
+    }
+    a {
+      font-size: 1.4rem;
+    }
+  }
 </style>

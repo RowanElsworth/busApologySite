@@ -31,6 +31,13 @@
     margin: 0 2rem;
   }
 
+  @media only screen and (max-width: 500px) {
+    section {
+      grid-template-columns: none;
+      grid-template-rows: auto;
+    }
+  }
+
   div {
     max-height: 300px;
     outline: 1px solid #333;
